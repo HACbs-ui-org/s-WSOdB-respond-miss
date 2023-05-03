@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-springboot-hello2-afsi
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/s/java-springboot-hello2-afsi@sha256:1730cf891557325d419c887df2db23bee3125d3f0119d36713123faf0ce41a45
+        name: my-java-springboot
+        resources: {}
+status: {}
